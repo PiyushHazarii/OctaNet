@@ -64,7 +64,7 @@ class ATM
         }
     }
 
-    public void check_Balance()                                                   // This method checks the balamce of the user.
+    public void check_Balance()                                                   // This method checks the balance of the user.
         {
             System.out.println("Balance: " + Balance); 
             display_Menu();
@@ -77,7 +77,7 @@ class ATM
  
         int deposit_amount = sc.nextInt();                                        // Take the input from the user that how much Money he wants to deposits in the ATM.
 
-        Balance = Balance + deposit_amount;
+        Balance = Balance + deposit_amount;                                       // Add the deposited amount to the balance.
 
         System.out.println("Money Deposited Successfully...");
 
@@ -108,11 +108,11 @@ class ATM
 
 }
 
-class ATM_Machine                                                               // This is the main class.
+class ATM_Machine                                                                 // This is the main class.
 {  
     public static void main (String args[])
     {
-        ATM atm = new ATM();                                                       // Create the object of ATM class and calls the check_pin method.
+        ATM atm = new ATM();                                                      // Create the object of ATM class and calls the check_pin method.
         atm.check_pin();
     }
 }
